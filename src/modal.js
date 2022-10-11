@@ -18,8 +18,7 @@ modalContenedor.addEventListener('click', () => {
 
 modalCarrito.addEventListener('click', (e) => {
     e.stopPropagation();
-
-    if (e.target.classList.contains('boton-eliminar')) {
-        eliminarProductoCarrito(e.target.value)
-    };
+    //Aplique operador ternario && con su return implicito, ya que solo devolvia una declaracion.
+    
+    e.target.classList.contains('boton-eliminar') && eliminarProductoCarrito(e.target.value)
 });

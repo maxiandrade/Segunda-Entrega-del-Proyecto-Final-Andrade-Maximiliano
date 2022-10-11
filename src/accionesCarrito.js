@@ -17,6 +17,7 @@ const validarProductoRepetido = (productoId) => {
     } else {
         agregarAlCarrito(productoId);
     }
+    
 };
 
 const agregarAlCarrito = (productoId) => {

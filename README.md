@@ -1,1 +1,1 @@
-# Segunda-Entrega-del-Proyecto-Final-Andrade-Maximiliano
+# OperadorTernario-Proyecto-Final-Andrade-Maximiliano
