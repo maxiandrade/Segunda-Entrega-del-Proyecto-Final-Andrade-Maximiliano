@@ -15,7 +15,7 @@ const mostrarProductos = (productos) => {
                           <p>${producto.desc}</p>
                           <p>Precio: $${producto.precio}</p>
                       </div>
-                     `
+                      `
     contenedorProductos.appendChild(div);
 
     const boton = document.getElementById(`boton${producto.id}`);
@@ -24,3 +24,19 @@ const mostrarProductos = (productos) => {
     })
   });
 };
+
+
+//Aplique la libreria SweetAlert, probe con varias clases y me toma el doom en general,
+//Donde haga click, me toma el evento en todo el doom en general. como podria hacer para ubicar el boton agregar?
+
+let btn = document.getElementById('producto-contenedor');
+
+btn = addEventListener("click", () => {
+  Swal.fire({
+    icon: "success",
+    title: "Se agrego al carrito",
+    text: "esperamos tu compra",
+    showConfirmButton: false,
+    timer: 1300
+  })
+})
